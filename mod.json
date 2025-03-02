@@ -1,0 +1,47 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074"
+	},
+	"id": "what28.menu-video-bg",
+	"name": "Menu Video Background",
+	"version": "v1.0.0",
+	"links": {
+		"source": "https://github.com/calvinzosa/geode_menu-video-bg"
+	},
+	"settings": {
+		"bgVideoPath": {
+			"type": "file",
+			"name": "Background Video File",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.mp4", "*.mkv", "*.avi", "*.mov", "*.wmv", "*.flv", "*.webm", "*.ogv", "*.ts", "*.mpeg", "*.mpg", "*.3gp", "*.vob", "*.asf"],
+						"description": "Video Files"
+					}
+				]
+			}
+		},
+		"fps": {
+			"type": "int",
+			"name": "Output FPS",
+			"default": 60,
+			"min": 1
+		},
+		"loadBtn": {
+			"type": "custom:btn",
+			"name": "Load Video",
+			"description": "Apply your settings before clicking execute! Please do not repeatedly click if nothing happens in 5 seconds"
+		}
+	},
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=1.17.0",
+			"importance": "required"
+		}
+	},
+	"developer": "what28",
+	"description": "Display a video in the menu screen"
+}
