@@ -51,7 +51,7 @@ protected:
 		}
 		
 		m_buttonSprite = ButtonSprite::create("Execute", "bigFont.fnt", "GJ_button_02.png", .8f);
-		m_buttonSprite->setScale(.5f);
+		m_buttonSprite->setScale(0.5f);
 		
 		m_button = CCMenuItemSpriteExtra::create(m_buttonSprite, this, menu_selector(MyButtonSettingNodeV3::onButton));
 		
@@ -76,7 +76,7 @@ protected:
 	}
 	
 	void onButton(CCObject*) {
-		std::thread thread(onNewBackground);
+		std::thread thread(loadBackground);
 		thread.detach();
 	}
 	

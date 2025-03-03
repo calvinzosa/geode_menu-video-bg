@@ -27,13 +27,21 @@
 		"fps": {
 			"type": "int",
 			"name": "Output FPS",
+			"description": "The FPS of the output video (recommended 30-60 so that there won't be a billion images)",
 			"default": 60,
 			"min": 1
 		},
 		"loadBtn": {
 			"type": "custom:btn",
-			"name": "Load Video",
+			"name": "Load Video (READ DESCRIPTION)",
 			"description": "Apply your settings before clicking execute! Please do not repeatedly click if nothing happens in 5 seconds"
+		},
+		"renderFps": {
+			"type": "int",
+			"name": "Render FPS",
+			"description": "The FPS used when rendering the actual video",
+			"default": 60,
+			"min": 1
 		}
 	},
 	"dependencies": {
